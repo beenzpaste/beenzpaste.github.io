@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Portfolio</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    /* Navigation Bar */
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 1em 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 1em;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Section styling */
+    section {
+      padding: 100px 20px 40px; /* extra top padding for fixed nav */
+      margin-top: 60px;
+    }
+    /* About Me Section */
+    #about {
+      background: #f4f4f4;
+    }
+    /* Projects Section */
+    #projects {
+      background: #fff;
+    }
+    /* Grid for project entries */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-item {
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .project-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    /* Blog Section */
+    #blog {
+      background: #f4f4f4;
+    }
+    .blog-list {
+      list-style: none;
+      padding: 0;
+    }
+    .blog-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .blog-list li a {
+      text-decoration: none;
+      color: #333;
+    }
+    /* Contact Section */
+    #contact {
+      background: #fff;
+      text-align: center;
+    }
+    #contact a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 0.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <!-- Each link uses an anchor reference (#id) to scroll to the relevant section -->
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Welcome to my personal portfolio! Here you can learn about my work, read my blog posts, and get in touch with me.</p>
+    <!-- Add quick facts or a short bio about yourself here -->
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h1>Projects</h1>
+    <!-- Container for dynamic project entries -->
+    <div class="project-grid" id="projects-container">
+      <!-- JavaScript will populate this container with project items -->
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h1>Blog</h1>
+    <!-- Container for blog list entries; each entry will link to its separate page -->
+    <ul class="blog-list" id="blog-container">
+      <!-- JavaScript will populate this list dynamically -->
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h1>Contact</h1>
+    <p>If you would like to get in touch, find me on these platforms:</p>
+    <!-- Add your contact links (email, LinkedIn, GitHub, etc.) -->
+    <p>
+      <a href="mailto:your.email@example.com">Email</a> |
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <!-- JavaScript to dynamically add content to Projects and Blog sections -->
+  <script>
+    // Example data arrays for projects and blog posts
+    const projects = [
+      {
+        title: "Project One",
+        description: "A short description of project one.",
+        image: "https://via.placeholder.com/280x150?text=Project+One"
+        // You can replace the image URL with your own project image.
+      },
+      {
+        title: "Project Two",
+        description: "A short description of project two.",
+        image: "https://via.placeholder.com/280x150?text=Project+Two"
+      },
+      // Add more projects as needed
+    ];
+
+    const blogs = [
+      {
+        title: "My First Blog Post",
+        link: "blog/post1.html",
+        date: "2025-01-15"
+      },
+      {
+        title: "Another Insightful Post",
+        link: "blog/post2.html",
+        date: "2025-02-20"
+      },
+      // Add more blog posts as needed
+    ];
+
+    // Function to populate the projects section
+    function loadProjects() {
+      const container = document.getElementById('projects-container');
+      // Loop through each project in the projects array
+      projects.forEach(project => {
+        // Create a div for the project item
+        const projectDiv = document.createElement('div');
+        projectDiv.classList.add('project-item');
+
+        // Create and add the image element
+        const img = document.createElement('img');
+        img.src = project.image;
+        img.alt = project.title;
+        projectDiv.appendChild(img);
+
+        // Create and add the title
+        const title = document.createElement('h3');
+        title.textContent = project.title;
+        projectDiv.appendChild(title);
+
+        // Create and add the description
+        const desc = document.createElement('p');
+        desc.textContent = project.description;
+        projectDiv.appendChild(desc);
+
+        // Append the project item to the container
+        container.appendChild(projectDiv);
+      });
+    }
+
+    // Function to populate the blog section
+    function loadBlogs() {
+      const container = document.getElementById('blog-container');
+      // Loop through each blog post in the blogs array
+      blogs.forEach(blog => {
+        // Create a list item for the blog post
+        const li = document.createElement('li');
+        
+        // Create an anchor element that links to the blog page
+        const link = document.createElement('a');
+        link.href = blog.link;
+        link.textContent = `${blog.title} (${blog.date})`;
+        li.appendChild(link);
+        
+        // Append the blog entry to the list
+        container.appendChild(li);
+      });
+    }
+
+    // Initialize the dynamic content when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      loadProjects();
+      loadBlogs();
+    });
+  </script>
+
+</body>
+</html>
