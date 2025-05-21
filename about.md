@@ -1,7 +1,26 @@
 ---
 title: about
-layout: page
+layout: about
 ---
+
+<!-- Repeat this block for each section -->
+<div class="text-right font-bold">Education</div>
+<div class="text-left">
+  B.S. in Mechanical Engineering, NYU Abu Dhabi  
+  Exchange Semester at UC Berkeley
+</div>
+
+<div class="text-right font-bold">Skills</div>
+<div class="text-left">
+  Python, R, Java, LaTeX, VHDL, MATLAB  
+  SolidWorks, Fusion 360
+</div>
+
+<div class="text-right font-bold">Languages</div>
+<div class="text-left">
+  English (fluent), Mandarin (native), Arabic (basic)
+</div>
+
 ## Modo nostra
 
 Lorem markdownum mihi; hic sonantem tenebat telum successu mollierant inani
