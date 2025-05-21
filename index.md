@@ -1,8 +1,8 @@
 ---
 layout: home
 ---
-## Beenz' Pocket
+# Beenz' Pocket
 
-Welcome to Beenz' Pocket, an amalgamation of works done, experiments, and interesting tidbits that evolves with me. 
+Welcome to Beenz' Pocket, an amalgamation of works done, experimentation, and interesting tidbits that evolves with me. 
 
 Love, Sheena
