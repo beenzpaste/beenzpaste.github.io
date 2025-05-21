@@ -1,10 +1,10 @@
-domain: beenz.co
-url: https://beenz.co
-baseurl: "/beenz"
+domain: example.com
+url: https://example.com
+baseurl: "/wind"
 
-title: Love, Sheena
-email: hc3550@nyu.edu
-author: Sheena Chiang
+title: Wind
+email: wind@example.com
+author: Wind Sample
 
 lang: en
 
@@ -16,6 +16,6 @@ color: "#13ccf9"
 #   shortname: example-com
 #
 rrss:
-  email: "hc3550@nyu.edu"
+  email: "example@example.cl"
   telegram: "https://t.me/"
   discord: "https://discord.com/"
