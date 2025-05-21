@@ -1,24 +1,33 @@
 ---
-title: about
 layout: about
+title: about
 ---
 
-<!-- Repeat this block for each section -->
+<div class="text-right font-bold">Based in</div>
+<div>Taiwan // Abu Dhabi // New York</div>
+
 <div class="text-right font-bold">Education</div>
-<div class="text-left">
-  B.S. in Mechanical Engineering, NYU Abu Dhabi  
-  Exchange Semester at UC Berkeley
+<div>Electrical Engineering <span class="italic">@ NYU Abu Dhabi</span></div>
+
+<div class="text-right font-bold">Focus on</div>
+<div>
+  Design -- <span class="italic">Wayfinding, UI/UX, Lettering</span><br>
+  Engineering -- <span class="italic">Civil > Mech > Electrical</span> <span class="text-sm text-gray-500">There's a fun story here!</span><br>
+  Interests -- <span class="italic">Machine Learning, Behavioral Economics</span>
 </div>
 
-<div class="text-right font-bold">Skills</div>
-<div class="text-left">
-  Python, R, Java, LaTeX, VHDL, MATLAB  
-  SolidWorks, Fusion 360
+<div class="text-right font-bold">Experience in</div>
+<div>
+  C++, R, Java<br>
+  Adobe Indesign + Illustrator<br>
+  Figma, Webflow
 </div>
 
-<div class="text-right font-bold">Languages</div>
-<div class="text-left">
-  English (fluent), Mandarin (native), Arabic (basic)
+<div class="text-right font-bold">Speak</div>
+<div>
+  English, Mandarin <span class="text-sm text-gray-500">(Proficient)</span><br>
+  Japanese <span class="text-sm text-gray-500">(Elementary)</span><br>
+  French, German <span class="text-sm text-gray-500">(Limited)</span>
 </div>
 
 ## Modo nostra
