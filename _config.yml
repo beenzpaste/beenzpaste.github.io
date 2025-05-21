@@ -1,10 +1,10 @@
-domain: example.com
-url: https://example.com
-baseurl: "/wind"
+domain: beenz.co
+url: https://beenz.co
+baseurl: "/beenz"
 
-title: Wind
-email: wind@example.com
-author: Wind Sample
+title: Love, Sheena
+email: hc3550@nyu.edu
+author: Sheena Chiang
 
 lang: en
 
@@ -13,11 +13,13 @@ plugins:
 
 theme: wind-theme
 
-color: "#13ccf9"
+color: "#B85042"
 # disqus:
 #   shortname: example-com
 #
 rrss:
-  email: "example@example.cl"
+  email: "hc3550@nyu.edu"
   telegram: "https://t.me/"
   discord: "https://discord.com/"
+  linkedin: "www.linkedin.com/in/hsin-chiang"
+
