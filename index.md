@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-# Welcome
 
-Hello World. Hello Friend.
+Welcome to Beenz' Pocket, an amalgamation of works done, experiments, and interesting tidbits that evolves with me. 
 
+# Love, Sheena
