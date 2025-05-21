@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+
+  <body class="container mx-auto px-4 md:px-16 tracking-wide bg-slate-50 dark:bg-slate-800 dark:text-white">
+    {% include navbar.html %}
+
+    <div class="py-8">
+      <!-- Header -->
+      <h1 class="text-left text-3xl font-bold mb-10">{{ page.title }}</h1>
+
+      <!-- Two-column layout -->
+      <div class="grid grid-cols-[auto_1fr] gap-x-10 gap-y-6">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include up_button.html %}
+  </body>
+</html>
