@@ -3,28 +3,28 @@ layout: about
 title: about
 ---
 
-<div class="text-left font-bold">Based in</div>
-<div class="text-right">Taiwan // Abu Dhabi // New York</div>
+<div class="text-right font-bold">Based in</div>
+<div>Taiwan // Abu Dhabi // New York</div>
 
 <div class="text-left font-bold">Education</div>
-<div class="text-right">Electrical Engineering <span class="italic">@ NYU Abu Dhabi</span></div>
+<div>Electrical Engineering <span class="italic">@ NYU Abu Dhabi</span></div>
 
-<div class="text-left font-bold">Focus on</div>
-<div class="text-right">
+<div class="text-right font-bold">Focus on</div>
+<div>
   Design -- <span class="italic">Wayfinding, UI/UX, Lettering</span><br>
   Engineering -- <span class="italic">Civil > Mech > Electrical</span> <span class="text-sm text-gray-500">There's a fun story here!</span><br>
   Interests -- <span class="italic">Machine Learning, Behavioral Economics</span>
 </div>
 
-<div class="text-left font-bold">Experience in</div>
-<div class="text-right">
+<div class="text-right font-bold">Experience in</div>
+<div>
   C++, R, Java<br>
   Adobe Indesign + Illustrator<br>
   Figma, Webflow
 </div>
 
-<div class="text-left font-bold">Speak</div>
-<div class="text-right">
+<div class="text-right font-bold">Speak</div>
+<div>
   English, Mandarin <span class="text-sm text-gray-500">(Proficient)</span><br>
   Japanese <span class="text-sm text-gray-500">(Elementary)</span><br>
   French, German <span class="text-sm text-gray-500">(Limited)</span>
