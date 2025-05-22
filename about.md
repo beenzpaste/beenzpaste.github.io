@@ -1,6 +1,8 @@
 ---
 layout: about
 title: about
+intro: >
+  I'm a designer and engineer
 ---
 
 <div class="text-right font-bold">Based in</div>
